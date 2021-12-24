@@ -7,6 +7,9 @@ export type TodoDocumnet = Todo & Document;
 export class Todo {
   @Prop()
   title: string;
+
+  @Prop()
+  completed: boolean;
 }
 
 export const TodoSchema = SchemaFactory.createForClass(Todo);
